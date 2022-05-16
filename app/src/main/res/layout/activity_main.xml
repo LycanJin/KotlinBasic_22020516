@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="20dp"
     tools:context=".MainActivity">
 
@@ -12,5 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="로그 찍어보기" />
+
+    <Button
+        android:id="@+id/btn_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="토스트 띄우기" />
 
 </LinearLayout>
