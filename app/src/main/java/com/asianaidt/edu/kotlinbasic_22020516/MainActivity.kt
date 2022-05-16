@@ -45,6 +45,42 @@ class MainActivity : AppCompatActivity() {
             name1 = "준표" // 변수 변경 가능
 //            name2 = "대입" // 상수 변경 불가
 
+            // 변수 초기화 테스트
+            val year1 = 1998 // Int로 자동 설정
+//            year1 = "문자열" // 자료형이 맞지 않아 대입 불가
+
+        }
+
+        btn_condition.setOnClickListener {
+
+            // if 문 테스트
+            val userAge = 18
+
+            if (userAge <= 20) {
+                Toast.makeText(this, "성인임미당.", Toast.LENGTH_SHORT).show()
+            }
+            else if (userAge >= 17) {
+                Toast.makeText(this, "고딩임미당.", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                Toast.makeText(this, "중딩 아래 입니당", Toast.LENGTH_SHORT).show()
+            }
+
+            // 2. when 테스트
+            val num = 30
+
+            when (num) {
+                10 -> {
+                    Log.d("when 테스트", "10인 경우")
+                }
+                15 -> Log.d("when 테스트", "15인 경우 - 코드 한줄")
+                20, 30, 40 -> Log.d("when 테스트", "20, 30, 40 중 하나")
+                in 41..100 -> Log.d("when 테스트", "41 ~ 100 사이의 값")
+                else -> Log.d("when 테스트", "그 외의 모든 숫자")
+            }
+
+
+
         }
     }
 }
