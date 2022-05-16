@@ -20,4 +20,10 @@
         android:layout_height="wrap_content"
         android:text="토스트 띄우기" />
 
+    <Button
+        android:id="@+id/btn_variable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="변수 문법 테스트" />
+
 </LinearLayout>

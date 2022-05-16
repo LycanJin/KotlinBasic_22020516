@@ -29,6 +29,21 @@ class MainActivity : AppCompatActivity() {
             // 토스트를 띄움
             Toast.makeText(this, "테스트용 토스트", Toast.LENGTH_SHORT).show()
 
+        }
+
+        btn_variable.setOnClickListener {
+
+            // 변수 문법 테스트
+
+            var name1 : String // 변수
+            val name2 : String // 상수
+
+            // 최초 대입은 둘다 가능
+            name1 = "철수"
+            name2 = "영희"
+
+            name1 = "준표" // 변수 변경 가능
+//            name2 = "대입" // 상수 변경 불가
 
         }
     }
