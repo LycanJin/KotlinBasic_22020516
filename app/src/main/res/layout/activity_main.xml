@@ -38,4 +38,22 @@
         android:layout_height="wrap_content"
         android:text="반복문 테스트" />
 
+    <EditText
+        android:id="@+id/edt_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="아무 말이나 입력" />
+
+    <Button
+        android:id="@+id/btn_copy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="위 멕시지 복사" />
+
+    <TextView
+        android:id="@+id/txt_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="복사 한 내용이 여기에 표시됩니다." />
+
 </LinearLayout>

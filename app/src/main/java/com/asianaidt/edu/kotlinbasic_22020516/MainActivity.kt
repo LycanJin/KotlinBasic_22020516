@@ -103,5 +103,14 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+
+        btn_copy.setOnClickListener {
+
+            // EditText에 입력된 내용을 변수에 담음
+            val inputMessage = edt_message.text.toString();
+
+            txt_message.text = inputMessage
+
+        }
     }
 }
